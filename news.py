@@ -1,3 +1,6 @@
+
+# TODO
+# Try using shebang statement here
 import requests
 from requests import session
 import requests
@@ -12,6 +15,7 @@ def remove_tags(text):
 
 url = 'https://www.bbc.com/news/uk-52304914'
 response=requests.get(url)
+# TODO: Use 'with' statment to open file, study about with keyword in python
 hs=open("2.html",'w')
 hs.write(response.text)
 hs.close()
